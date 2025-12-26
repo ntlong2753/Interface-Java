@@ -1,9 +1,12 @@
-package animal;
+package test;
 
 import animal.DongVat;
 import animal.Ga;
 import animal.Ho;
-import animal.Edible;
+import edible.Edible;
+import fruit.TraiCay;
+import fruit.Tao;
+import fruit.Cam;
 
 public class Test {
     public static void main(String[] args) {
@@ -23,6 +26,12 @@ public class Test {
                 Edible edibler = (Ho) animal;
                 System.out.println(edibler.howToEat());
             }
+        }
+        TraiCay[] traiCay = new TraiCay[2];
+        traiCay[0] = new Cam();
+        traiCay[1] = new Tao();
+        for (TraiCay anQua : traiCay){
+            System.out.println(anQua.howToEat());
         }
 
     }

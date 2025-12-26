@@ -1,6 +1,8 @@
 package animal;
 
-public class Ho extends DongVat implements Edible{
+import edible.Edible;
+
+public class Ho extends DongVat implements Edible {
     @Override
     public String amThanh() {
         return "Hổ: Yahoooo!!!!!";

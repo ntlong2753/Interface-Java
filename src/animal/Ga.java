@@ -1,5 +1,7 @@
 package animal;
 
+import edible.Edible;
+
 public class Ga extends DongVat implements Edible {
     @Override
     public String amThanh() {
